@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+   
+
+    <title>Quiz</title>
+</head>
+
+<body>
+    <section>
+        <h2>WELCOME TO MY QUIZ</h2>
+        <form id="quizForm">
+            <p><label for="q1">1. HTML is what type of language ?</label><br>
+            <input type="radio" name="q1" value="a"> Markup Language<br>
+            <input type="radio" name="q1" value="b"> Scripting Language<br>
+            <input type="radio" name="q1" value="c"> Programming Language<br></p>
+
+            <p><label for="q2">2. HTML uses :</label><br>
+            <input type="radio" name="q2" value="a"> User defined tags<br>
+            <input type="radio" name="q2" value="b"> Pre-specified tags<br>
+            <input type="radio" name="q2" value="c"> Fixed tags defined by the language<br></p>
+
+            <p>
+                <label for="q3">3. The year in which HTML was first proposed _______.</label><br>
+                <input type="radio" name="q3" value="a"> 1980<br>
+                <input type="radio" name="q3" value="b"> 1990<br>
+                <input type="radio" name="q3" value="c"> 2000<br>
+            </p>
+            
+
+            <p><label for="q4">4. Apart from <b></b>tag, what other tag makes text bold ?</label><br>
+            <input type="radio" name="q4" value="a"> fat<br>
+            <input type="radio" name="q4" value="b"> strong<br>
+            <input type="radio" name="q4" value="c"> emp <br></p>
+
+            <p><label for="q5">5. How can you make a bulleted list with numbers?</label><br>
+            <input type="radio" name="q5" value="a"> dl<br>
+            <input type="radio" name="q5" value="b"> ol<br>
+            <input type="radio" name="q5" value="c"> ul <br></p>
+
+            <p><label for="q6">6. What tag is used to display a picture in a HTML page?</label><br>
+            <input type="radio" name="q6" value="a"> pic<br>
+            <input type="radio" name="q6" value="b"> img<br>
+            <input type="radio" name="q6" value="c"> image<br></p>
+
+            <p><label for="q7">7. HTML web pages can be read and rendered by _________.</label><br>
+                <input type="radio" name="q7" value="a">Web Browser <br>
+                <input type="radio" name="q7" value="b">Server <br>
+                <input type="radio" name="q7" value="c">Compiler <br>
+            </p>
+            
+
+            <p><label for="q8">8. Which of the following is not a browser ?</label><br>
+            <input type="radio" name="q8" value="a"> Microsofts Bing<br>
+            <input type="radio" name="q8" value="b"> Mozilla Firefox<br>
+            <input type="radio" name="q8" value="c"> Netscape Navigator<br></p>
+
+            <p><label for="q9">9. HTML tags are surrounded by which type of brackets.</label><br>
+            <input type="radio" name="q9" value="a">Angle <br>
+            <input type="radio" name="q9" value="b">Round <br>
+            <input type="radio" name="q9" value="c"> Squart<br></p>
+
+            <p><label for="q10">10. Tags and test that are not directly displayed on the page are written in _____ section.</label><br>
+            <input type="radio" name="q10" value="a">title <br>
+            <input type="radio" name="q10" value="b"> head<br>
+            <input type="radio" name="q10" value="c"> html<br></p>
+
+            <button type="submit">Soumettre</button>
+        </form>
+
+        <div id="result"></div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Mon Site Personnel</p>
+</footer>
+
+<script>
+    document.getElementById('quizForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        let score = 0;
+        let correctAnswers = [
+            'a', 'c', 'b', 'b', 'b', 'b', 'a', 'a', 'a', 'b'
+        ];
+        let userAnswers = [
+            document.querySelector('input[name="q1"]:checked'),
+            document.querySelector('input[name="q2"]:checked'),
+            document.querySelector('input[name="q3"]:checked'),
+            document.querySelector('input[name="q4"]:checked'),
+            document.querySelector('input[name="q5"]:checked'),
+            document.querySelector('input[name="q6"]:checked'),
+            document.querySelector('input[name="q7"]:checked'),
+            document.querySelector('input[name="q8"]:checked'),
+            document.querySelector('input[name="q9"]:checked'),
+            document.querySelector('input[name="q10"]:checked')
+        ];
+
+        userAnswers.forEach((answer, index) => {
+            if (answer && answer.value === correctAnswers[index]) {
+                score++;
+            }
+        });
+
+        let result = `Votre score est : ${score} sur 10.<br>Réponses correctes :<br>`;
+        correctAnswers.forEach((answer, index) => {
+            result += `Question ${index + 1}: ${answer === 'a' ? 'Réponse A' : answer === 'b' ? 'Réponse B' : 'Réponse C'}<br>`;
+        });
+
+        document.getElementById('result').innerHTML = result;
+    });
+</script>
+</body>
+</html>
+</html>

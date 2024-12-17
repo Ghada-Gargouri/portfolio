@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+ 
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  
+<script src="script.js"></script>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ghada Gargouri</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#academic">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#event">Events</a></li>
+          <li><a href="pages/hobbies.html">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ghada Gargouri</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#academic" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#event" onclick="toggleMenu()">Events</a></li>
+          <li><a href="pages/hobbies.html" onclick="toggleMenu()">Hobbies</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Ghada profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ghada Gargouri</h1>
+        <p class="section__text__p2">Software engineering student</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1"  onclick="location.href='#contact'" >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          style="cursor: pointer;"
+          onclick="location.href='https://www.linkedin.com/in/ghada-gargouri-66623327a';"
+      />
+      
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Ghada-Gargouri'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              
+              
+              <p>Being a software engineering student, I have great enthusiasm and am willing to learn. I love interacting with different people in different situations and look at problems in a positive way. I appreciate the finer points and like to indulge in thinking in order to solve problems.
+
+                I am a good team member and enjoy working with others to come up with ideas and new ways of doing things. To achieve such goals, I believe that respect and spoken agreements need to be practiced. I am also quite structured in my ways and effectively prioritize what needs to be done and when at a personal or academic level.
+                
+                Due to the increase in the factors of curiosity and improvement, I am motivated in being of assistance and positively influencing any workplace.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+</section>
+
+      <section id="academic">
+        <p class="section__text__p1">Discover My</p>
+      <h1 class="title">Academic Career</h1>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <!-- <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+         <h3>Experience</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>Science Baccalurate <br />Computer Science Bachelor degree </p>
+          </div>
+        </div>-->
+        <div class="text-container">
+          <p>
+            I graduated in Big Data and Data Analysis from the Higher Institute of Computer Science and Multimedia of Sfax. This academic path of mine helped me in development of my interest in exploration and analysis of data, thus allowing me to equip with the essentials of the Big Data practices.
+
+I could develop the required skills to solve complex problems through rigorous course work and hand on projects that involved the use of new technologies. I want to enhance my field’s knowledge further so that I am able to participate actively in the development of exciting projects and tackle captivating tasks in the sphere of computer science.
+          </p>
+        </div>
+      </div>
+    </div>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Bacsc.jpg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <br>
+            <h2 class="experience-sub-title project-title">Scientific Baccalaureate</h2>
+            <div class="btn-container">
+              
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Diplome.jpg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Bachelor's degree in Computer Science</h2>
+            <div class="btn-container">
+              
+            </div>
+          </div>
+
+    </section>
+
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Hard Skills</h1>
+      <div class="experience-details-container">
+        <!-- Unique Card -->
+        <div class="details-container">
+          <h2 class="experience-sub-title">Web Development & Programming Skills</h2>
+          <div class="article-container">
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>PHP</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>PyCharm</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Flutter</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>TypeScript</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Java</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>SQL</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Node JS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Express JS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Python</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img
+                src="./assets/checkmark.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <div>
+                <h3>Angular</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Browse My</p>
+      <h1 class="title">Professional Experiences</h1>
+      <table class="experience-table">
+        <thead>
+          <tr>
+            <th>Logo</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Experience 1 -->
+          <tr>
+            <td>
+              <img src="./assets/crns.png" alt="Stage d'été" class="experience-img" />
+            </td>
+            <td>
+              <h2 class="experience-sub-title">
+                <a href="https://crns.rnrt.tn/" target="_blank" class="experience-link">
+                  Summer Internship - Centre de Recherche Numérique de Sfax
+                </a>
+              </h2>
+              <p class="experience-description">
+                August 2022 - September 2022 <br />
+                I gained practical experience in digital research, focusing on data analysis and solution development.
+              </p>
+            </td>
+          </tr>
+    
+          <!-- Experience 2 -->
+          <tr>
+            <td>
+              <img src="./assets/steg.png" alt="PFA-Société Tunisienne de l'Électricité et du Gaz" class="experience-img" />
+            </td>
+            <td>
+              <h2 class="experience-sub-title">
+                <a href="https://www.steg.com.tn/fr/contact/gouvernorat.php" target="_blank" class="experience-link">
+                  Summer Internship - Société Tunisienne de l'Électricité et du Gaz
+                </a>
+              </h2>
+              <p class="experience-description">
+                July 2023 - August 2023 <br />
+                I have experience in designing mobile apps, working in fast-paced environments, and collaborating to deliver user-focused solutions with attention to detail.
+              </p>
+            </td>
+          </tr>
+    
+          <!-- Experience 3 -->
+          <tr>
+            <td>
+              <img src="./assets/kingdig.jpg" alt="PFE King Digital YC" class="experience-img" />
+            </td>
+            <td>
+              <h2 class="experience-sub-title">
+                <a href="https://www.facebook.com/p/King-Digital-YC-100091828807281/" target="_blank" class="experience-link">
+                  Graduation Project - King Digital YC
+                </a>
+              </h2>
+              <p class="experience-description">
+                February 2024 - May 2024 <br />
+                At King Digital YC, I developed the "Meta Sport" web app, focusing on UI design and backend integration, which enhanced my web development and collaboration skills.
+              </p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+
+
+    <section id="event">
+      <p class="section__text__p1">Discover My </p>
+      <h1 class="title">Event Highlights</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/certif.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">AI Skills Recognition Day</h2>
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/certif2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">What’s on Your PC: A Microsoft Learning Journey</h2>
+            
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/certif3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">A Journey into Azure DevOps Mastery</h2>
+            
+          </div>
+        </div>
+      </div>
+
+   
+      
+    
+    <br><br> <br> <br>
+    <br><br> <br>
+    <div class="btn-container">
+      <button class="btn btn-color-3" onclick="window.location.href='pages/quiz.html';" >Test Skills</button>
+      <button class="btn btn-color-4"  onclick="window.location.href='pages/iit.html';" >
+        Life at IIT
+      </button>
+    </div>
+
+
+
+
+
+
+
+
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <form id="contact-form">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit"  id="button" value="Send Email" onclick="sendMail()">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+          <li><a href="#academic">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#event">Events</a></li>
+          <li><a href="pages/hobbies.html">Hobbies</a></li>
+          <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Gargouri Ghada. All Rights Reserved.</p>
+    </footer>
+    <div class="footer-line"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
